@@ -14,7 +14,7 @@ arguments: ["-m", "polus.plugins.formats.ome_converter"]
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/ome-converter-plugin:0.3.2
+    dockerPull: jakefennick/ome-converter-plugin:0.3.2
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:
