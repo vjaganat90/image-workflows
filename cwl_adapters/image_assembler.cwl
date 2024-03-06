@@ -8,10 +8,6 @@ doc: |-
   This plugin assembles images into a stitched image using an image stitching vector.
   https://github.com/PolusAI/polus-plugins/tree/master/transforms/images/image-assembler-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.transforms.images.image_assembler"]
-
 requirements:
   DockerRequirement:
     dockerPull: polusai/image-assembler-plugin:1.4.0-dev0

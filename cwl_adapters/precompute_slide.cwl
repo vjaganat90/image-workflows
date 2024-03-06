@@ -8,10 +8,6 @@ doc: |-
   This plugin generates image pyramids in multiple viewing formats.
   https://github.com/PolusAI/polus-plugins/tree/master/visualization/polus-precompute-slide-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.visualization.precompute_slide"]
-
 requirements:
   DockerRequirement:
     dockerPull: polusai/precompute-slide-plugin:1.7.0-dev0

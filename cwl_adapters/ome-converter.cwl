@@ -8,10 +8,6 @@ doc: |-
   This WIPP plugin converts BioFormats supported data types to the OME Zarr file format.
   https://github.com/PolusAI/polus-plugins/tree/master/formats/ome-converter-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.formats.ome_converter"]
-
 requirements:
   DockerRequirement:
     dockerPull: jakefennick/ome-converter-plugin:0.3.2

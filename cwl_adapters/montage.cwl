@@ -8,10 +8,6 @@ doc: |-
   This plugin generates a stitching vector that will montage images together.
   https://github.com/PolusAI/polus-plugins/tree/master/transforms/images/montage-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.transforms.images.montage"]
-
 requirements:
   DockerRequirement:
     dockerPull: polusai/montage-plugin:0.5.0
