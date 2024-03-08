@@ -18,10 +18,6 @@ requirements:
       writable: true  # Output directories must be writable
   InlineJavascriptRequirement: {}
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.regression.basic_flatfield_estimation"]
-
 # "jax._src.xla_bridge - WARNING  - An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu."
 hints:
   cwltool:CUDARequirement:

@@ -7,10 +7,6 @@ doc: |-
   Downloads the datasets on the Broad Bioimage Benchmark Collection website
   https://github.com/saketprem/polus-plugins/tree/bbbc_download/utils/bbbc-download-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.utils.bbbc_download"]
-
 requirements:
   DockerRequirement:
     dockerPull: polusai/bbbc-download-plugin:0.1.0-dev1

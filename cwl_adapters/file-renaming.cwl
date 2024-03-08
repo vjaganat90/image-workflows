@@ -7,10 +7,6 @@ doc: |-
   Rename and store image collection files in a new image collection
   https://github.com/PolusAI/polus-plugins/tree/master/formats/file-renaming-plugin
 
-# See https://github.com/PolusAI/workflow-inference-compiler/blob/master/docker_remove_entrypoints.py
-baseCommand: python3
-arguments: ["-m", "polus.plugins.formats.file_renaming"]
-
 requirements:
   DockerRequirement:
     dockerPull: polusai/file-renaming-plugin:0.2.1-dev0  # NOTE: 0.2.3 not pushed yet
