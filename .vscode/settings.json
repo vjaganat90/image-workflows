@@ -1,6 +1,6 @@
 {
     "yaml.customTags": [
-        "!& mapping",
+        "!&",
         "!*",
         "!ii"
     ]
