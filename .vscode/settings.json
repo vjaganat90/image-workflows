@@ -2,6 +2,8 @@
     "yaml.customTags": [
         "!&",
         "!*",
-        "!ii"
+        "!ii",
+        "!ii mapping",
+        "!ii sequence"
     ]
 }
