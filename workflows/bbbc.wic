@@ -1,17 +1,17 @@
 steps:
-- bbbcdownload:
+  bbbcdownload:
     in:
       name: !ii BBBC001
       outDir: !ii bbbcdownload.outDir
     out:
     - outDir: !& bbbcdownload.outDir
-- subdirectory:
+  subdirectory:
     in:
       directory: !* bbbcdownload.outDir
       glob_pattern: !ii bbbcdownload.outDir/BBBC/BBBC001/raw/Images/human_ht29_colon_cancer_1_images/
     out:
     - subdirectory: !& subdirectory.subdirectory
-- file-renaming:
+  file-renaming:
     in:
       filePattern: !ii .*_{row:c}{col:dd}f{f:dd}d{channel:d}.tif
       inpDir: !* subdirectory.subdirectory
@@ -19,7 +19,7 @@ steps:
       outFilePattern: !ii x{row:dd}_y{col:dd}_p{f:dd}_c{channel:d}.tif
     out:
     - outDir: !& file-renaming.outDir
-- ome-converter:
+  ome-converter:
     in:
       fileExtension: !ii .ome.tif
       filePattern: !ii .*.tif
@@ -27,7 +27,7 @@ steps:
       outDir: !ii omeconverter.outDir
     out:
     - outDir: !& omeconverter.outDir
-- montage:
+  montage:
     in:
       filePattern: !ii x00_y03_p{p:dd}_c0.ome.tif
       inpDir: !* omeconverter.outDir
@@ -35,14 +35,14 @@ steps:
       outDir: !ii montage.outDir
     out:
     - outDir: !& montage.outDir
-- image_assembler:
+  image_assembler:
     in:
       imgPath: !* omeconverter.outDir
       outDir: !ii image_assembler.outDir
       stitchPath: !* montage.outDir
     out:
     - outDir: !& image_assembler.outDir
-- precompute_slide:
+  precompute_slide:
     in:
       imageType: !ii image
       inpDir: !* image_assembler.outDir
