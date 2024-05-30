@@ -1,8 +1,8 @@
 from pathlib import Path
 
-from wic import plugins
-from wic.api import pythonapi
-from wic.api.pythonapi import Step, Workflow
+from sophios import plugins
+from sophios.api import pythonapi
+from sophios.api.pythonapi import Step, Workflow
 
 def workflow() -> Workflow:
     bbbcdownload = Step(clt_path='cwl_adapters/bbbcdownload.cwl')
