@@ -8,7 +8,7 @@ def workflow() -> Workflow:
     bbbcdownload.name = 'BBBC001'
     bbbcdownload.outDir = Path('bbbcdownload.outDir')
 
-    subdirectory = Step(clt_path='../workflow-inference-compiler/cwl_adapters/subdirectory.cwl')
+    subdirectory = Step(clt_path='../sophios/cwl_adapters/subdirectory.cwl')
     subdirectory.directory = bbbcdownload.outDir
     subdirectory.glob_pattern = 'bbbcdownload.outDir/BBBC/BBBC001/raw/Images/human_ht29_colon_cancer_1_images/'
 
