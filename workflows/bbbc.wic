@@ -43,7 +43,7 @@ steps:
     - outDir: !& image_assembler.outDir
   precompute_slide:
     in:
-      imageType: !ii image
+      imageType: !ii Intensity
       inpDir: !* image_assembler.outDir
       outDir: !ii precompute_slide.outDir
       pyramidType: !ii Zarr
