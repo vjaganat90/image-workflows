@@ -6,11 +6,11 @@ label: Precompute Slide
 
 doc: |-
   This plugin generates image pyramids in multiple viewing formats.
-  https://github.com/PolusAI/polus-plugins/tree/master/visualization/polus-precompute-slide-plugin
+  https://github.com/NovagenResearch/image-tools/tree/master/visualization/precompute-slide-tool
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/precompute-slide-plugin:1.7.0-dev0
+    dockerPull: polusai/precompute-slide-tool:1.7.3-dev0
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:
@@ -36,9 +36,9 @@ inputs:
       prefix: --pyramidType
 
   imageType:
-    label: Image is either Segmentation or Image
+    label: Image is either Intensity or Segmentation
     doc: |-
-      Image is either Segmentation or Image
+      Image is either Intensity or Segmentation
     inputBinding:
       prefix: --imageType
     type: string

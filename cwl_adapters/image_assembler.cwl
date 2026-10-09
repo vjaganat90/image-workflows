@@ -6,11 +6,11 @@ label: Image Assembler
 
 doc: |-
   This plugin assembles images into a stitched image using an image stitching vector.
-  https://github.com/PolusAI/polus-plugins/tree/master/transforms/images/image-assembler-plugin
+  https://github.com/NovagenResearch/image-tools/tree/master/transforms/images/image-assembler-tool
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/image-assembler-plugin:1.4.0-dev0
+    dockerPull: polusai/image-assembler-tool:1.4.3
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:
@@ -94,4 +94,4 @@ $namespaces:
 $schemas:
 - https://raw.githubusercontent.com/edamontology/edamontology/master/EDAM_dev.owl
 
-# manifest: https://raw.githubusercontent.com/PolusAI/polus-plugins/master/transforms/images/image-assembler-plugin/plugin.json
+# manifest: https://raw.githubusercontent.com/NovagenResearch/image-tools/master/transforms/images/image-assembler-tool/plugin.json
