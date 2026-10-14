@@ -10,7 +10,7 @@ doc: |-
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/precompute-slide-tool:1.7.3-dev0
+    dockerPull: vjaganat90/precompute-slide-tool:1.7.3-dev1
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:
