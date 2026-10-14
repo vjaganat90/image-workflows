@@ -31,7 +31,7 @@ inputs:
   mapDirectory:
     inputBinding:
       prefix: --mapDirectory
-    type: string?  # enum: raw, map, default
+    type: boolean?  # file-renaming-tool: a flag; the plugin took raw, map or nothing
 
   preview:
     label: Generate a JSON file describing what the outputs should be
