@@ -10,7 +10,7 @@ doc: |-
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/basic-flatfield-estimation-plugin:2.1.1
+    dockerPull: vjaganat90/basic-flatfield-estimation-tool:2.1.6-dev0
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:

@@ -9,7 +9,7 @@ doc: |-
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/file-renaming-plugin:0.2.1-dev0  # NOTE: 0.2.3 not pushed yet
+    dockerPull: vjaganat90/file-renaming-tool:0.2.6-dev0
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:

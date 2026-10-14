@@ -9,7 +9,7 @@ doc: |-
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/bbbc-download-plugin:0.1.0-dev1
+    dockerPull: vjaganat90/bbbc-download-plugin:0.1.1-dev1
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:

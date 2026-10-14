@@ -10,7 +10,7 @@ doc: |-
 
 requirements:
   DockerRequirement:
-    dockerPull: polusai/montage-plugin:0.5.0
+    dockerPull: vjaganat90/montage-tool:0.5.3-dev0
   # See https://www.commonwl.org/v1.0/CommandLineTool.html#InitialWorkDirRequirement
   InitialWorkDirRequirement:
     listing:
